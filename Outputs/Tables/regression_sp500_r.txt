@@ -1,0 +1,27 @@
+                             OLS Regression Results                             
+================================================================================
+Dep. Variable:     SP500_monthly_return   R-squared:                       0.007
+Model:                              OLS   Adj. R-squared:                 -0.003
+Method:                   Least Squares   F-statistic:                    0.7271
+Date:                  Fri, 17 Apr 2026   Prob (F-statistic):              0.537
+Time:                          15:18:12   Log-Likelihood:                -892.12
+No. Observations:                   300   AIC:                             1792.
+Df Residuals:                       296   BIC:                             1807.
+Df Model:                             3                                         
+Covariance Type:              nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    0.2147      1.181      0.182      0.856      -2.109       2.538
+YOY_inflation            0.0795      0.349      0.228      0.820      -0.606       0.766
+Inflation_volatility     0.0044      0.559      0.008      0.994      -1.096       1.105
+Inflation_surprise      -0.3932      0.455     -0.864      0.388      -1.288       0.502
+==============================================================================
+Omnibus:                       41.381   Durbin-Watson:                   2.068
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               90.870
+Skew:                          -0.696   Prob(JB):                     1.85e-20
+Kurtosis:                       5.309   Cond. No.                         15.3
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

@@ -3,8 +3,8 @@
 Dep. Variable:     SP500_monthly_return   R-squared:                       0.021
 Model:                              OLS   Adj. R-squared:                  0.011
 Method:                   Least Squares   F-statistic:                     2.087
-Date:                  Fri, 17 Apr 2026   Prob (F-statistic):              0.102
-Time:                          15:18:12   Log-Likelihood:                -890.08
+Date:                  Sat, 18 Apr 2026   Prob (F-statistic):              0.102
+Time:                          11:57:12   Log-Likelihood:                -890.08
 No. Observations:                   300   AIC:                             1788.
 Df Residuals:                       296   BIC:                             1803.
 Df Model:                             3                                         

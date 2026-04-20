@@ -1,0 +1,28 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       SP500_volatility   R-squared:                       0.938
+Model:                            OLS   Adj. R-squared:                  0.938
+Method:                 Least Squares   F-statistic:                     911.2
+Date:                Mon, 20 Apr 2026   Prob (F-statistic):          1.28e-164
+Time:                        17:35:33   Log-Likelihood:                -228.86
+No. Observations:                 300   AIC:                             467.7
+Df Residuals:                     295   BIC:                             486.2
+Df Model:                           4                                         
+Covariance Type:                  HC1                                         
+========================================================================================
+                           coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    0.1944      0.137      1.419      0.156      -0.074       0.463
+SP500_volatility_lag     0.9428      0.022     43.663      0.000       0.900       0.985
+YOY_inflation           -0.0283      0.036     -0.785      0.433      -0.099       0.042
+Inflation_volatility     0.1420      0.093      1.520      0.128      -0.041       0.325
+Inflation_surprise      -0.0314      0.038     -0.827      0.408      -0.106       0.043
+==============================================================================
+Omnibus:                       68.204   Durbin-Watson:                   1.242
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1390.633
+Skew:                          -0.167   Prob(JB):                    1.07e-302
+Kurtosis:                      13.542   Cond. No.                         28.6
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)

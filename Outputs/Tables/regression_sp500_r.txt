@@ -2,20 +2,20 @@
 ================================================================================
 Dep. Variable:     SP500_monthly_return   R-squared:                       0.007
 Model:                              OLS   Adj. R-squared:                 -0.003
-Method:                   Least Squares   F-statistic:                    0.7271
-Date:                  Sat, 18 Apr 2026   Prob (F-statistic):              0.537
-Time:                          11:57:12   Log-Likelihood:                -892.12
+Method:                   Least Squares   F-statistic:                    0.6310
+Date:                  Mon, 20 Apr 2026   Prob (F-statistic):              0.596
+Time:                          17:35:33   Log-Likelihood:                -892.12
 No. Observations:                   300   AIC:                             1792.
 Df Residuals:                       296   BIC:                             1807.
 Df Model:                             3                                         
-Covariance Type:              nonrobust                                         
+Covariance Type:                    HC1                                         
 ========================================================================================
-                           coef    std err          t      P>|t|      [0.025      0.975]
+                           coef    std err          z      P>|z|      [0.025      0.975]
 ----------------------------------------------------------------------------------------
-const                    0.2147      1.181      0.182      0.856      -2.109       2.538
-YOY_inflation            0.0795      0.349      0.228      0.820      -0.606       0.766
-Inflation_volatility     0.0044      0.559      0.008      0.994      -1.096       1.105
-Inflation_surprise      -0.3932      0.455     -0.864      0.388      -1.288       0.502
+const                    0.2147      1.181      0.182      0.856      -2.101       2.530
+YOY_inflation            0.0795      0.392      0.203      0.839      -0.690       0.849
+Inflation_volatility     0.0044      0.878      0.005      0.996      -1.717       1.726
+Inflation_surprise      -0.3932      0.442     -0.889      0.374      -1.260       0.474
 ==============================================================================
 Omnibus:                       41.381   Durbin-Watson:                   2.068
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):               90.870
@@ -24,4 +24,4 @@ Kurtosis:                       5.309   Cond. No.                         15.3
 ==============================================================================
 
 Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[1] Standard Errors are heteroscedasticity robust (HC1)

@@ -3,8 +3,8 @@
 Dep. Variable:       SP500_volatility   R-squared:                       0.274
 Model:                            OLS   Adj. R-squared:                  0.267
 Method:                 Least Squares   F-statistic:                     280.2
-Date:                Sat, 18 Apr 2026   Prob (F-statistic):           3.90e-86
-Time:                        11:57:16   Log-Likelihood:                -598.78
+Date:                Mon, 20 Apr 2026   Prob (F-statistic):           3.90e-86
+Time:                        17:35:33   Log-Likelihood:                -598.78
 No. Observations:                 300   AIC:                             1206.
 Df Residuals:                     296   BIC:                             1220.
 Df Model:                           3                                         

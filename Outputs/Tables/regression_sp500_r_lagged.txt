@@ -2,20 +2,20 @@
 ================================================================================
 Dep. Variable:     SP500_monthly_return   R-squared:                       0.021
 Model:                              OLS   Adj. R-squared:                  0.011
-Method:                   Least Squares   F-statistic:                     2.087
-Date:                  Sat, 18 Apr 2026   Prob (F-statistic):              0.102
-Time:                          11:57:12   Log-Likelihood:                -890.08
+Method:                   Least Squares   F-statistic:                     1.511
+Date:                  Mon, 20 Apr 2026   Prob (F-statistic):              0.212
+Time:                          17:35:33   Log-Likelihood:                -890.08
 No. Observations:                   300   AIC:                             1788.
 Df Residuals:                       296   BIC:                             1803.
 Df Model:                             3                                         
-Covariance Type:              nonrobust                                         
+Covariance Type:                    HC1                                         
 ==================================================================================
-                     coef    std err          t      P>|t|      [0.025      0.975]
+                     coef    std err          z      P>|z|      [0.025      0.975]
 ----------------------------------------------------------------------------------
-const              0.9212      1.172      0.786      0.433      -1.386       3.228
-Inflation_lag     -0.2450      0.348     -0.705      0.481      -0.929       0.439
-Volatility_lag     0.3551      0.556      0.638      0.524      -0.739       1.450
-Surprise_lag      -0.1968      0.453     -0.434      0.665      -1.089       0.696
+const              0.9212      1.130      0.815      0.415      -1.294       3.137
+Inflation_lag     -0.2450      0.376     -0.653      0.514      -0.981       0.491
+Volatility_lag     0.3551      0.805      0.441      0.659      -1.224       1.934
+Surprise_lag      -0.1968      0.407     -0.484      0.629      -0.995       0.601
 ==============================================================================
 Omnibus:                       45.574   Durbin-Watson:                   2.086
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):              102.208
@@ -24,4 +24,4 @@ Kurtosis:                       5.427   Cond. No.                         15.3
 ==============================================================================
 
 Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[1] Standard Errors are heteroscedasticity robust (HC1)

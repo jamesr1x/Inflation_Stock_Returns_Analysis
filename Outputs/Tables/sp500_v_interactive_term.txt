@@ -1,0 +1,27 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       SP500_volatility   R-squared:                       0.337
+Model:                            OLS   Adj. R-squared:                  0.330
+Method:                 Least Squares   F-statistic:                     84.91
+Date:                Mon, 20 Apr 2026   Prob (F-statistic):           1.16e-39
+Time:                        17:35:33   Log-Likelihood:                -585.35
+No. Observations:                 300   AIC:                             1179.
+Df Residuals:                     296   BIC:                             1194.
+Df Model:                           3                                         
+Covariance Type:                  HC1                                         
+==========================================================================================
+                             coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+const                      2.8601      0.334      8.557      0.000       2.205       3.515
+YOY_inflation              0.0793      0.143      0.554      0.580      -0.201       0.360
+Inflation_volatility       2.7581      0.200     13.804      0.000       2.367       3.150
+Inflation_x_volatility    -0.3665      0.083     -4.420      0.000      -0.529      -0.204
+==============================================================================
+Omnibus:                       27.767   Durbin-Watson:                   0.115
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               33.624
+Skew:                           0.720   Prob(JB):                     5.00e-08
+Kurtosis:                       3.786   Cond. No.                         19.2
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)

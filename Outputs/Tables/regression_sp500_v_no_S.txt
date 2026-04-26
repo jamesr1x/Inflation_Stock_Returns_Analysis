@@ -1,0 +1,23 @@
+                  Results: Ordinary least squares
+====================================================================
+Model:                OLS              Adj. R-squared:     0.300    
+Dependent Variable:   SP500_volatility AIC:                1190.7903
+Date:                 2026-04-26 17:20 BIC:                1201.9016
+No. Observations:     300              Log-Likelihood:     -592.40  
+Df Model:             2                F-statistic:        50.87    
+Df Residuals:         297              Prob (F-statistic): 1.00e-19 
+R-squared:            0.305            Scale:              3.0694   
+--------------------------------------------------------------------
+                      Coef.  Std.Err.    z    P>|z|   [0.025  0.975]
+--------------------------------------------------------------------
+const                 4.3058   0.1011 42.5683 0.0000  4.1075  4.5040
+YOY_inflation        -0.6478   0.1294 -5.0051 0.0000 -0.9014 -0.3941
+Inflation_volatility  1.0285   0.1038  9.9114 0.0000  0.8251  1.2319
+--------------------------------------------------------------------
+Omnibus:               21.645        Durbin-Watson:           0.107 
+Prob(Omnibus):         0.000         Jarque-Bera (JB):        24.229
+Skew:                  0.653         Prob(JB):                0.000 
+Kurtosis:              3.485         Condition No.:           1     
+====================================================================
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)

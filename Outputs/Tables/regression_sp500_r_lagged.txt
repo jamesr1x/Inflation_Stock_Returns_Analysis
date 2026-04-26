@@ -1,27 +1,24 @@
-                             OLS Regression Results                             
-================================================================================
-Dep. Variable:     SP500_monthly_return   R-squared:                       0.021
-Model:                              OLS   Adj. R-squared:                  0.011
-Method:                   Least Squares   F-statistic:                     1.511
-Date:                  Mon, 20 Apr 2026   Prob (F-statistic):              0.212
-Time:                          17:35:33   Log-Likelihood:                -890.08
-No. Observations:                   300   AIC:                             1788.
-Df Residuals:                       296   BIC:                             1803.
-Df Model:                             3                                         
-Covariance Type:                    HC1                                         
-==================================================================================
-                     coef    std err          z      P>|z|      [0.025      0.975]
-----------------------------------------------------------------------------------
-const              0.9212      1.130      0.815      0.415      -1.294       3.137
-Inflation_lag     -0.2450      0.376     -0.653      0.514      -0.981       0.491
-Volatility_lag     0.3551      0.805      0.441      0.659      -1.224       1.934
-Surprise_lag      -0.1968      0.407     -0.484      0.629      -0.995       0.601
-==============================================================================
-Omnibus:                       45.574   Durbin-Watson:                   2.086
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):              102.208
-Skew:                          -0.756   Prob(JB):                     6.40e-23
-Kurtosis:                       5.427   Cond. No.                         15.3
-==============================================================================
-
+                   Results: Ordinary least squares
+======================================================================
+Model:              OLS                  Adj. R-squared:     0.011    
+Dependent Variable: SP500_monthly_return AIC:                1788.1551
+Date:               2026-04-26 17:20     BIC:                1802.9702
+No. Observations:   300                  Log-Likelihood:     -890.08  
+Df Model:           3                    F-statistic:        1.511    
+Df Residuals:       296                  Prob (F-statistic): 0.212    
+R-squared:          0.021                Scale:              22.408   
+-----------------------------------------------------------------------
+                     Coef.   Std.Err.     z     P>|z|    [0.025  0.975]
+-----------------------------------------------------------------------
+const                0.6648    0.2733   2.4324  0.0150   0.1291  1.2004
+Inflation_lag       -0.4298    0.6587  -0.6525  0.5141  -1.7208  0.8612
+Volatility_lag       0.1776    0.4028   0.4408  0.6593  -0.6119  0.9670
+Surprise_lag        -0.2631    0.5442  -0.4835  0.6287  -1.3297  0.8035
+----------------------------------------------------------------------
+Omnibus:                45.574        Durbin-Watson:           2.086  
+Prob(Omnibus):          0.000         Jarque-Bera (JB):        102.208
+Skew:                   -0.756        Prob(JB):                0.000  
+Kurtosis:               5.427         Condition No.:           4      
+======================================================================
 Notes:
 [1] Standard Errors are heteroscedasticity robust (HC1)

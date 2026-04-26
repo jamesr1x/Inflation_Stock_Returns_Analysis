@@ -32,14 +32,14 @@ Inflation_Stock_Returns_Analysis/
 └── Report.qmd
 ```
 
-### Explanation of Directory:
+## Explanation of Directory:
 
 ### The project contains 4 scripts:
 
-- "Get_raw_data.ipynb" Collects raw data from the FED and Yfinance and converts this raw data into 3 CSVs which are stored in "Data/Raw_data/"
-- "Clean.ipynb" Carries out data processing on the raw data CSVs, combinding them into a single CSV called Clean.CSV which is stored in "Data/Raw_data/"
-- "Analysis.ipynb" Carries out analysis on the cleaned data. It produces graphs which are stored in "Outputs/Figures/" and regression tables which are stored in "Outputs/Tables/"
-- "Make.py" This sets up the folder structure for the directory and runs all 3 scripts in the correct order (Get_raw_data -> Clean -> Analysis)
+- "Get_raw_data.ipynb" collects raw data from the FED and Yfinance and converts this raw data into 3 csvs which are stored in "Data/Raw_data/"
+- "Clean.ipynb" carries out data processing on the raw data csvs, combinding them into a single csv file called Clean.csv which is stored in "Data/Raw_data/"
+- "Analysis.ipynb" carries out analysis on the cleaned data (Clean.csv). It produces graphs which are stored in "Outputs/Figures/" and regression tables which are stored in "Outputs/Tables/"
+- "Make.py" sets up the folder structure for the directory and runs all 3 scripts in the correct order (Get_raw_data -> Clean -> Analysis)
 
 ### FRED_API_key.txt
 
@@ -64,18 +64,18 @@ Before running the scripts please install the following libraries:
 - Yfinance: 1.2.0
 - Fredapi: N/A
 
-**NOTE:** if the libraries are not functioning as expected please check versions match.
+**NOTE:** If libraries are not functioning as expected please check versions match.
 
 ## Instructions
 
 To replicate the analysis either:
-- A) Pull the whole repository (simpler)
-- Run "make.py" to run all scrypts
+- A) Pull the whole repository (Recommended)
+- Run "make.py" to run all scripts
 - Veiw Report.qmd (any updates to graphs and regression models will automatically be included)
 
 OR
   
-- B) Download the "Scrypts" folder and "Report.qmd"
+- B) Download the "Scripts" folder and "Report.qmd"
 - Ensure the folder and files are in the following format:
 ```
 ├── Scripts/
@@ -86,8 +86,16 @@ OR
 │
 └── Report.qmd
 ```
-- Run "make.py" to run all scrypts
+- Run "make.py" to run all scripts
 - Veiw Report.qmd to view the final report (any updates to graphs and regression models will automatically be included)
+
+**NOTE:** Within "Get_raw_data.ipynb" cell 3, a txt file is past in containing my API key, this file is in .gitignore so will not automatically appear. There are two options to deal with this:
+
+A) Replace the contents of the brackets in the following code with your API key and remove the previous 2 rows of code:
+
+```fred = Fred(api_key = fred_api_key)```
+
+B) Create a txt file called "FRED_API_key.txt" and paste in your API key. Position the file in the directory so that it matches the directory structure outlined earlier.
 
 ## Method
 
@@ -105,7 +113,7 @@ OR
 - Time‑series plots  
 - Scatter plots with fitted lines  
 
-**regression modelling**
+**Regression Modelling:**
 - S&P500 returns on inflation metrics  
 - Lagged inflation metrics  
 - S&P500 volatility on inflation metrics  
@@ -120,8 +128,7 @@ OR
 - Initial Inflation volatility and inflation surprise correlate with S&P500 volatility.
 - Once lagged S&P500 volatility is included in the model, all inflation metrics become insignificant.
 - Past volatility is the strongest predictor of current volatility.
-
-To conclude inflation related uncertainty may trigger short‑term volatility spikes, but it is not a structural driver of ongoing market volatility.
+- To conclude inflation related uncertainty may trigger short‑term volatility spikes, but it is not a structural driver of ongoing market volatility.
 
 
 

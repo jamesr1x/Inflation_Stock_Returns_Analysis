@@ -1,5 +1,5 @@
 ---
-title: "How Do Inflation Metrics Influence S&P500 Returns and Volatility"
+title: "How Do Inflation Metrics Influence S&P500 Returns and Volatility?"
 author: "James Rix"
 format: html
 toc: true

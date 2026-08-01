@@ -1,6 +1,6 @@
 # How Do Inflation Metrics Influence S&P500 Returns and Volatility?
 
-This is my 2nd year Data Science project at the University of Exeter for the module BEE2041_A_2_202526. The project involves collecting, analysing and reporting findings, to answer the following research question: **How Do Inflation Metrics Influence S&P500 Returns and Volatility?** I use 3 seperate inflation metrics: Inflation, inflation volatility and inflation surprise.
+This project involves collecting, analysing and reporting findings, to answer the following research question: **How Do Inflation Metrics Influence S&P500 Returns and Volatility?** I use 3 seperate inflation metrics: Inflation, inflation volatility and inflation surprise.
 
 The analysis uses 300 monthly observations from 01/01/2001-12/31/2025 and collects 3 sets of raw data from 2 websites:
 
